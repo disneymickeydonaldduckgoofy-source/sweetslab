@@ -134,7 +134,7 @@ footer a{color:var(--accent-ink)}
       <div class="cell"><label for="mark">しるし</label>
         <select id="mark">
           <option value="all">すべて</option>
-          <option value="want">気になる</option>
+          <option value="want">行きたい</option>
           <option value="went">行った</option>
           <option value="not">まだ行っていない</option>
         </select></div>
@@ -148,7 +148,7 @@ footer a{color:var(--accent-ink)}
   </section>
 
   <footer>
-    <div>営業時間・定休日・商品は変わることがあります。行く前に公式サイトやSNSで確認してください。距離は直線距離で、店の位置は丁目単位の目安です（数百mずれることがあります）。「今日開いている店」は定休日の曜日だけで判断しています（祝日・臨時休業は反映されません）。「行った」「気になる」はこの端末のブラウザにだけ保存されます。</div>
+    <div>営業時間・定休日・商品は変わることがあります。行く前に公式サイトやSNSで確認してください。距離は直線距離で、店の位置は丁目単位の目安です（数百mずれることがあります）。「今日開いている店」は定休日の曜日だけで判断しています（祝日・臨時休業は反映されません）。「行った」「行きたい」はこの端末のブラウザにだけ保存されます。</div>
     <div>住所・営業時間・定休日は各店の公式サイトやSNS、ない場合はグルメサイト等で確認しました（各店の「情報元」から開けます）。「要確認」は確認できなかった項目です。</div>
     <div>評価は食べログの点数です（2026-10-22時点）。3.50以上を色付きで表示しています。</div>
   </footer>
@@ -221,7 +221,7 @@ function renderList(){
         <dl class="row"><dt>メモ</dt><dd>${esc(d.note)}</dd></dl></div>
       <div class="acts">
         <button class="went" data-mark="went" data-id="${d.id}" aria-pressed="${!!m.went}">行った</button>
-        <button class="want" data-mark="want" data-id="${d.id}" aria-pressed="${!!m.want}">気になる</button>
+        <button class="want" data-mark="want" data-id="${d.id}" aria-pressed="${!!m.want}">行きたい</button>
         <a href="https://www.google.com/maps/search/?api=1&query=${mapq}" target="_blank" rel="noopener">地図</a>
         <a href="${d.src}" target="_blank" rel="noopener">情報元</a>
       </div></article>`}).join("");
